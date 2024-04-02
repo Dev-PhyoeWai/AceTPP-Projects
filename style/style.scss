@@ -1,0 +1,140 @@
+
+@import "./variables";
+
+// header section
+    .navbar{
+        background-color: $mainColor;
+        padding: 1px 0;
+        text-align: center;
+        a{
+            text-decoration: none;
+        }
+        h2{
+            color: $textColor;
+            
+        }
+    }
+
+    .menu-link{
+        display: flex;
+        justify-content: center;
+        
+
+        &__list{
+            font-weight: bold;
+            margin-top: 5px;
+            width: 33.3%;
+            text-align: center;
+            background: $secondarynavColor;
+            padding: 20px 0;
+            border-right: 2px solid $textColor;
+        }
+       
+    }
+    .cards{
+        margin-top: 30px ;
+    }
+
+    .container{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .image-box {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4px;
+    
+        &__card {
+          width: calc(33.33% - 8px);
+          text-align: center;
+          
+          a{
+            text-decoration: none;
+        } 
+
+          .zoom-img {
+            display: flex;
+            justify-content: center;
+            overflow: hidden;
+    
+            img {
+              width: 100%;
+              height: 100%;
+              transition: all ease-in-out 0.5s; 
+    
+              &:hover {
+                transform: scale(1.3);
+                cursor: pointer;
+              }
+            }
+          }
+    
+          .btn {
+            margin-top: 4px;
+            width: 280px;
+            height: 45px;
+            transform: skew(-30deg);
+            background: $textColor;
+            color: $mainColor;
+            box-shadow: 3px 3px 6px $hoverColor;
+            border: 0.5px solid $textColor;
+            transition: all 0.5s ease-in-out;
+    
+            &:hover {
+              cursor: pointer;
+              background: $hoverColor;
+              color: $textColor;
+              border: 0.5px solid $textColor;
+              box-shadow: 2px 2px 4px $hoverColor;
+              transition: .7s;
+              font-weight: bold;
+            }
+          }
+        }
+      }
+
+// second section => client support
+    .client-sup {
+        margin-top: 25px;
+
+        &__list {
+          padding: 10px 0;
+      
+          dt {
+            padding: 20px 10px;
+            background-color: $primaryColor;
+            position: relative;
+            color: $textColor;
+            font-weight: bold;
+            font-size: 20px;
+      
+            &::after {
+              cursor: pointer;
+              position: absolute;
+              content: "\002b";
+              right: 30px;
+              font-size: 30px;
+              color: $textColor;
+              font-weight: bold;
+              bottom: 13px;
+            }
+          }
+          dd {
+            padding: 15px 8px;
+            font-size: 18px;
+          }
+        }
+      }
+
+// footer section
+.ft-section {
+    padding: 20px 0;
+    background-color: $mainColor;
+  
+    &__text {
+      text-align: center;
+      color: $textColor;
+    }
+  }
+
