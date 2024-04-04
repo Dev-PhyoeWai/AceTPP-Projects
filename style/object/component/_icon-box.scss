@@ -1,0 +1,52 @@
+
+.c-icon-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 0 55px;
+
+    margin-top: -40px;
+
+    &__space {
+        width: calc(100% / 3 - 21.5px);
+        text-align: center;
+        background: $mainColor;
+        border: 1px solid $borderColor;
+        .boxview {
+            text-align: center;
+            width: 251px;
+            margin: 0 auto;
+            padding: 67px 0 48px 0;
+            img {
+                width: 88px;
+                height: 88px;
+                margin-bottom: 20px;
+            }
+            h4 {
+                @include latoFontFamily(400);
+                margin-bottom: 20px;
+                font-size: 18px;
+                
+            }
+            p {
+                @include poppinsFontFamily(300);
+                letter-spacing: 10;
+                line-height: 25px;
+                font-size: 16px;
+                color: $paragraphColor;
+            }
+            .icon {
+                width: 88px;
+                height: 88px;
+                background: $buttonColor;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50%;
+                margin-bottom: 32px;
+                margin: 0 auto;
+            }
+        }
+    }
+
+}

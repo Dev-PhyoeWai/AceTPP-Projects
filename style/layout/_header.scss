@@ -1,0 +1,71 @@
+
+@import "../object/utility/color";
+
+.l-header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 56px 0;
+  
+    &__navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: -20px;
+    }
+  
+    &__logo {
+      h1 {
+        a {
+          font-family: "Dancing Script", cursive;
+          font-size: 28px;
+          font-weight: 700;
+          color: $mainColor;
+          text-decoration: none;
+        }
+      }
+    }
+  
+    &__menu-link {
+      ul {
+        display: flex;
+        justify-content: flex-start;
+        padding-right: 42px;
+  
+        li {
+          list-style: none;
+          margin: 0 19.7px;
+  
+          a {
+            @include poppinsFontFamily(500);
+            font-size: 12px;
+            font-weight: 300;
+            color: $mainColor;
+            text-transform: uppercase;
+            position: relative;
+            letter-spacing: .1em;
+  
+            &:after {
+              content: '';
+              position: absolute;
+              width: 0;
+              height: 2px;
+              left: 0;
+              bottom: 0;
+              background-color: $menuColor;
+              opacity: 0;
+              transition: width .5s ease;
+            }
+  
+            &:hover {
+              &:after {
+                width: 100%;
+                opacity: 1;
+              }
+            }
+          }
+        }
+      }
+    }
+  }

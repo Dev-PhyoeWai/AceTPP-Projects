@@ -1,0 +1,13 @@
+
+.l-ft {
+    background: $buttonColor;  
+    padding: 58px 0;
+    text-align: center;
+    margin-top: -4px;
+    
+    &__address {
+        @include poppinsFontFamily(400);
+        color: $paragraphColor;
+        font-size: 20px;
+    }
+}

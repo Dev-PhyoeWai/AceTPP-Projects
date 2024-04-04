@@ -1,0 +1,13 @@
+
+// Lato
+@mixin latoFontFamily($weight: 500) {
+    font-family: 'Lato', sans-serif;
+    font-weight: $weight;
+  }
+  
+// Poppins
+@mixin poppinsFontFamily($weight: 500) {
+    font-family: 'Poppins', sans-serif;
+    font-weight: $weight;
+}
+  
