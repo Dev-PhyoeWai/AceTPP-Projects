@@ -1,0 +1,80 @@
+
+.popup {
+    display: none;
+    position: relative;
+  
+    left: 50%;
+    transform: translate(-50%);
+    background-color: white;
+    padding:0 60px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+
+    background: #98989b;
+    width: 500px;
+    padding-bottom: 15px;
+
+    p{
+      text-align: center;
+      color: #ffffff;
+    }
+  }
+
+  
+  .close{
+    position: absolute;
+    top: 21px;
+    right: 56px;
+    cursor: pointer;
+    size: 4px;
+    color: #ffffff;
+  }
+  h2{
+    cursor: pointer;
+    color: #ffffff;
+   
+  }
+
+  
+
+  .demo{
+    color: #ffffff;
+    border:  none;
+    border-radius: 5px;
+    background: #5e83ea;
+    cursor: pointer;
+    padding: 10px;
+    text-transform: uppercase;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .btns{
+
+    display: flex;
+    justify-content: flex-end;
+   
+  }
+
+  .btn-sc,
+  .btn-c{
+    color: #ffffff;
+    border:  none;
+    border-radius: 5px;
+    background: #5e83ea;
+    cursor: pointer;
+    padding: 10px;
+    text-transform: uppercase;
+
+    margin-left: 10px;
+  }
+  .btn-c{
+    background: #7686b3;
+  }
+  .line2{
+    margin-bottom: 20px;
+  }
